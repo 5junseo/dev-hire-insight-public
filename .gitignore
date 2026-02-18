@@ -1,0 +1,47 @@
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ---------- Node / NestJS ----------
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# ---------- Crawler output ----------
+# 수집 결과(JSON/JSONL/CSV)는 저장소에 넣지 않음
+/devhire_crawler/*.json
+/devhire_crawler/*.jsonl
+/devhire_crawler/*.csv
+.scrapy/
+
+# ---------- Logs ----------
+*.log
+logs/
+# JVM 크래시 덤프 (JetBrains/DB 툴이 남김)
+hs_err_pid*.log
+replay_pid*.log
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+
+# ---------- 로컬 진단/참고용 스크립트 (커밋 안 함) ----------
+/scripts/_diagnostics/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+bash.exe.stackdump
